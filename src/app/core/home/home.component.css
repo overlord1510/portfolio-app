@@ -22,14 +22,19 @@
 
 .name {
     font-size: 2rem;
-    font-weight: bold; /* Add bold font weight for emphasis */
-    color: #007bff; /* Change color for name */
-    margin-bottom: 10px; /* Add spacing below the name */
+    font-weight: bold;
+    /* Add bold font weight for emphasis */
+    color: #007bff;
+    /* Change color for name */
+    margin-bottom: 10px;
+    /* Add spacing below the name */
 }
 
 .role {
-    font-style: italic; /* Add italic style for the role */
-    color: #6c757d; /* Change color for the role */
+    font-style: italic;
+    /* Add italic style for the role */
+    color: #6c757d;
+    /* Change color for the role */
 }
 
 .profile-image {
@@ -76,6 +81,30 @@
 
 .button:hover {
     opacity: 0.8;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin: 0 10px;
+}
+
+.contact-links img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
