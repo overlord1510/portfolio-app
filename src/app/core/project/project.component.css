@@ -1,0 +1,50 @@
+.project-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #FFF2D7;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px; /* Add margin between items */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Adjust the width for responsiveness */
+    max-width: 400px; /* Maximum width for larger screens */
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.project-item a:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .project-item {
+        width: calc(100% - 20px); /* Full width on smaller screens */
+    }
+}

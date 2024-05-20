@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectComponent } from './project/project.component';
 
 
 
@@ -11,7 +12,8 @@ import { SkillsComponent } from './skills/skills.component';
   declarations: [
     HomeComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule,
