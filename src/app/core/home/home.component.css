@@ -1,0 +1,95 @@
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF2D7;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold; /* Add bold font weight for emphasis */
+    color: #007bff; /* Change color for name */
+    margin-bottom: 10px; /* Add spacing below the name */
+}
+
+.role {
+    font-style: italic; /* Add italic style for the role */
+    color: #6c757d; /* Change color for the role */
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        /* margin: 20px 0; */
+        display: none;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
