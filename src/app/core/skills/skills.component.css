@@ -1,0 +1,89 @@
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFF2D7;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff8eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circular-chart {
+  width: 100px;
+  height: 100px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+  stroke: #007bff; /* Adjust color for the progress bar */
+}
+
+.percentage {
+  fill: #333;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .skills-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill-item {
+    font-size: 0.875rem;
+  }
+}
