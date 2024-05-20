@@ -57,7 +57,7 @@
   stroke-width: 2.8;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
-  stroke: #007bff; /* Adjust color for the progress bar */
+  stroke: #007bff; 
 }
 
 .percentage {

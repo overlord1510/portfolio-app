@@ -1,0 +1,11 @@
+<section class="certificates-carousel">
+  <button class="prev-button" (click)="prev()">Previous</button>
+  <div class="carousel">
+    <img [src]="certificateImageUrls[currentIndex]" alt="">
+  </div>
+  <button class="next-button" (click)="next()">Next</button>
+  <div class="small">
+    <button class="prev-button-small" (click)="prev()">Previous</button>
+    <button class="next-button-small" (click)="next()">Next</button>
+  </div>
+</section>

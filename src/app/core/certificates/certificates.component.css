@@ -1,0 +1,80 @@
+.certificates-carousel {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #FFF2D7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button,
+.prev-button-small,
+.next-button-small {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover,
+.prev-button-small:hover,
+.next-button-small:hover {
+  background-color: #0056b3;
+}
+
+.small {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .certificates-carousel {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .small{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .prev-button,
+  .next-button {
+    display: none;
+  }
+
+  .prev-button-small,
+  .next-button-small {
+    display: block;
+    margin: 10px auto;
+
+  }
+
+}

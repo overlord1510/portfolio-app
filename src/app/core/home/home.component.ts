@@ -22,10 +22,9 @@ export class HomeComponent {
         this.typedName += this.name.charAt(this.typedName.length);
       } else {
         clearInterval(nameInterval);
-        // Once name is fully typed, append "I'm a Full Stack Developer"
         setTimeout(() => {
           this.role += '- a Full Stack Developer';
-        }, 500); // Delay before adding the role text
+        }, 500);
       }
     }, 150);
   }

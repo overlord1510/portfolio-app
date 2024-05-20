@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectComponent } from './project/project.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+
 
 
 
@@ -13,7 +15,8 @@ import { ProjectComponent } from './project/project.component';
     HomeComponent,
     EducationComponent,
     SkillsComponent,
-    ProjectComponent
+    ProjectComponent,
+    CertificatesComponent
   ],
   imports: [
     CommonModule,
